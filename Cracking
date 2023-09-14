@@ -1,1 +1,13 @@
 
+
+
+ZIP
+--- John
+$ zip2john file.zip > file.hash
+$ john file.hash --wordlist=/usr/share/wordlists/rockyou.txt
+
+--- fcrackzip
+$ fcrackzip -u -D -v -p /usr/share/wordlists/rockyou.txt flag.zip
+$ fcrackzip -u -b -c aA1! flag.zip
+
+--- 
